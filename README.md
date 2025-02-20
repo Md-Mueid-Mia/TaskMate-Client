@@ -1,8 +1,47 @@
-# React + Vite
+# TaskMate
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+TaskMate is a modern task management application built with React and Vite. It features a drag-and-drop interface, real-time updates, and a clean, intuitive design for managing your daily tasks efficiently.
 
-Currently, two official plugins are available:
+## 🔗 Live Links
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Frontend: [TaskMate Live](https://taskmate-pro.web.app)
+- Backend: [TaskMate API](https://taskmate-server.vercel.app)
+
+## ✨ Features
+
+- Drag-and-drop task management
+- Real-time task updates
+- Google authentication
+- Responsive design
+- Task categorization (To-Do, In Progress, Done)
+- Edit and delete tasks
+- Modern UI with animations
+
+## 🛠️ Technologies Used
+
+- **Frontend:**
+  - React 18
+  - Vite
+  - TailwindCSS
+  - React Query (TanStack Query)
+  - React DND (@hello-pangea/dnd)
+  - Firebase Authentication
+  - Axios
+  - SweetAlert2
+  - React Hot Toast
+
+- **Backend:**
+  - Node.js
+  - Express
+  - MongoDB
+  - JWT Authentication
+  - Cors
+
+## 📦 Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/TaskMate-Client.git
+cd TaskMate-Client
+npm install
+

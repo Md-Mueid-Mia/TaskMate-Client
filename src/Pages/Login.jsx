@@ -22,7 +22,7 @@ const Login = () => {
             email: res.user?.email,
             photoURL: res.user?.photoURL,
           };
-          axios.post("http://localhost:5000/users", userInfo).then((res) => {
+          axios.post("https://task-mate-server-ashen.vercel.app/users", userInfo).then((res) => {
             // console.log(res.data)
             navigate("/");
           });

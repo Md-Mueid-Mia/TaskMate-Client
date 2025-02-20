@@ -6,7 +6,7 @@ import { AuthContext } from "./AuthProvider";
 export const TaskContext = createContext();
 
 const axiosInstance = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || "http://localhost:5000",
+  baseURL: import.meta.env.VITE_API_URL || "https://task-mate-server-ashen.vercel.app",
   withCredentials: true,
 });
 
