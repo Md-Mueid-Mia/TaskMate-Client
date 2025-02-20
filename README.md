@@ -4,8 +4,8 @@ TaskMate is a modern task management application built with React and Vite. It f
 
 ## 🔗 Live Links
 
-- Frontend: [TaskMate Live](https://taskmate-pro.web.app)
-- Backend: [TaskMate API](https://taskmate-server.vercel.app)
+- Frontend: [TaskMate Live](https://taskmate-abb2d.web.app)
+- Backend: [TaskMate API](https://task-mate-server-ashen.vercel.app)
 
 ## ✨ Features
 
@@ -41,7 +41,7 @@ TaskMate is a modern task management application built with React and Vite. It f
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/TaskMate-Client.git
+git clone https://github.com/Md-Mueid-Mia/TaskMate-Client.git
 cd TaskMate-Client
 npm install
 
