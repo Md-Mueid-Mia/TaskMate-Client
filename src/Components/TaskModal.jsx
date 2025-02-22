@@ -30,6 +30,8 @@ const TaskModal = ({ isOpen, closeModal, onSubmit, initialData }) => {
       ...(initialData && { _id: initialData._id }),
     });
     closeModal();
+    setTitle("")
+    setDescription("")
   };
 
   return (

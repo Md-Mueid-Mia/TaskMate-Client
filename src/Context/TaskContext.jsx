@@ -2,6 +2,7 @@ import { createContext, useContext } from "react";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import axios from "axios";
 import { AuthContext } from "./AuthProvider";
+import Swal from "sweetalert2";
 
 export const TaskContext = createContext();
 
@@ -36,14 +37,17 @@ export const TaskProvider = ({ children }) => {
       queryClient.invalidateQueries(["tasks", user?.email]);
     },
   });
+
+
   // Mutation for updating task
   const { mutate: updateTask } = useMutation({
     mutationFn: async ({ id, updatedTask }) => {
       const res = await axiosInstance.patch(`/tasks/${id}`, updatedTask);
+     
       return res.data;
     },
     onMutate: async ({ id, updatedTask }) => {
-      // Cancel outgoing fetches
+     
       await queryClient.cancelQueries(["tasks", user?.email]);
 
       // Get current tasks
